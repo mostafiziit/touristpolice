@@ -1,0 +1,74 @@
+
+ <header class="header-area main-header bg-white sticky z-depth-1">
+        <div class="container col-lg-12">
+            <div class="row">
+                <div class="col-lg-2" >
+                    <div class="logo-area my-lg-2">
+                        <a href="home" style="font-size:16px;font-weight:bold;color:#EF6C00"><span style="font-size:16px;font-weight:bold;color:#6A1B9A">Bangladesh</span><img src="assets/images/logo.png" alt="logo" height="55" width="55">Police</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                
+                        
+                   
+                    <div class="main-menu d-flex align-items-center justify-content-end my-lg-2">
+                        <ul class="menu" >
+                            <li class="active"><a href="security_service">Home</a></li>
+                            <li><a href="about.html" id="textstyle">Book</a>
+                            	<ul class="sub-menu">
+                                    <li><a href="security_service">Hotels</a></li>
+                                    <li><a href="security_service">Transports</a></li>
+                                    <li><a href="security_service">Security Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="security_service" id="textstyle">Cancel Booking</a></li>
+                            <li><a href="#" id="textstyle">Blog</a></li>
+                            <li><a href="contact-us.html" id="textstyle">Tourist Areas</a>
+                            	<ul class="sub-menu">
+                                    <li><a href="job-search.html">Visit Area</a></li>
+                                    <li><a href="job-single.html">FAQ</a></li>
+                                    <li><a href="pricing-plan.html">See Info</a></li>
+                                    <li><a href="elements.html">Offers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" id="textstyle">Contacts</a>
+                                <ul class="sub-menu">
+                                    <li><a href="job-search.html">Phone Number</a></li>
+                                    <li><a href="job-single.html">Email</a></li>
+                                    <li><a href="job-single.html">Office Address</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-btn ">
+                                <a href="#login" role="button"  data-toggle="modal">Login</a>
+                                <a href="usersignup" class="template-btn">sign up</a>
+                            </li> 
+                                               
+                        </ul>
+
+                        <div class="mt-1">
+                            <div class="custom-navbar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>  
+                        </div>
+                
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-lg-2">
+                    <div class="logo-area my-lg-2 d-none d-lg-block my-lg-2">
+                        <div class="d-flex justify-content-end">
+                            <a href="index.html" style="font-size:16px;font-weight:bold;color:#EF6C00" ><span style="font-size:16px;font-weight:bold;color:#6A1B9A">Tourist</span><img src="assets/images/icon.png" alt="logo" height="55" width="55">Police</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </header>
+
