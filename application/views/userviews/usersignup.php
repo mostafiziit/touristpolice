@@ -41,7 +41,7 @@
                         <div class="w-75 m-auto">
                             <div style="margin:20px;">
                                 <label style="display: block; color: black;font-family:serif;">User Name*</label>
-                                <input type="text" name="username" required="text" style="border-radius:6px;border-width: 1px;border-color:white;border:none;height:36px;width:75%;background-color:rgba(250,250,250,.7);padding-left:6px;margin-top:-5px">
+                                <input type="text" autocomplete="off" name="name" required="text" style="border-radius:6px;border-width: 1px;border-color:white;border:none;height:36px;width:75%;background-color:rgba(250,250,250,.7);padding-left:6px;margin-top:-5px">
                             </div>
                             <div style="margin:20px;">
                                 <label style="display: block; color: black;font-family:serif;">Email*</label>

@@ -41,6 +41,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    <li class="nav-item m-3">
 		      <a class="nav-link" href="touristplace" style="color:green;font-weight:500px;font-size:18px;font-family:sans-serif;">Manage Tourist Place</a>
 		    </li>
+
+            <li class="nav-item m-3">
+              <a class="nav-link" href="hotelmanage" style="color:green;font-weight:500px;font-size:18px;font-family:sans-serif;">Manage Hotels</a>
+            </li>
 	  	</ul>
 	  	<ul class="navbar-nav justify-content-end w-25">
 	  		
@@ -63,57 +67,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
     <?php } ?>
 
-   
 
-    <div class="container w-100 m-5 card" style="border-radius:10px">
-    	<div class="row">
-    		<div class="col-8" style="border-radius:10px">
-
-				<img class="w-100" src="assets/images/place3.jpg" style="border-radius:10px;margin-left:-15px">
-    			
-    			<?php echo form_open_multipart(''); ?>
-
-    			<input type="file" name="pic" required="text" class="btn btn-info w-100" style="margin-left:-12px;border-radius:10px">
-    		</div>
-    		<div class="col-4">
-    			<form action="" method="POST" class="m-3">
-    				<div>
-    					<label style="display:block;color:green">Place Name*</label>
-    					<input type="text" required="text" name="placename" class="w-100" style="border:1px solid blue;border-radius:6px;height:37px;margin-top:-4px;padding-left:6px">
-    				</div>
-    				<div class="mt-3">
-    					<label style="display:block;color:green">Description*</label>
-    					<textarea  required="text" type="text" name="description" class="w-100" style="border:1px solid blue;border-radius:8px;height:120px;margin-top:-4px;vertical-align:top;padding-left:6px;"></textarea>
-    				</div>
-    				<div class="mt-4">
-    					<label style="display:block;color:green">Location*</label>
-    					<select required="text" name="location" class="w-100" style="border:1px solid blue;border-radius:8px;height:37px;margin-top:-4px">
-        					 <option selected="true">Dhaka</option>
-                             <option>Chittagong</option>
-                             <option>Barisal</option>
-                             <option>Khulna </option>
-                             <option>Mymensingh</option>
-                             <option>Rajshahi</option>
-                             <option>Rangpur</option>
-                             <option>Sylhet</option>
-    					</select>
-    				</div>
-
-    				<button  name="submit"   class="w-100 btn btn-success mt-5" style="border-radius:10px;font-weight:bold
-    				">SUBMIT</button>
+    <div class="mt-5" align="self-centered">
+    	
+    	<form action="" method="POST">
+ 			<div class=" w-50 ml-5 card p-5">
+ 					<div class="form-group d-flex justify-content-end">
+ 						<label style="color:green">Edit Hotel Name*</label>
+    					<input type="text" required="text" name="edit_placename" value="<?php echo $hoteldata->hotel_name;?>" class="w-50" style="border:1px solid blue;border-radius:6px;height:37px;margin-top:-4px;padding-left:6px">
+ 					</div>
+    					
     				
-    			</form>
-    		</div>
-    	</div> 	
+    				<div class="form-group d-flex justify-content-end">
+    					<label style="color:green">Edit Contact*</label>
+                        <input type="text" required="text" name="edit_hotelcontact_text" value="<?php echo $hoteldata->hotel_contact;?>"class="w-50" style="border:1px solid blue;border-radius:6px;height:37px;margin-top:-4px;padding-left:6px">
+    				</div>
+
+    				<div class="form-group d-flex justify-content-end">
+    					<label style="color:green">Hotel Booking Page(Click to book)*</label>
+                        <input type="text" required="text" name="edit_toristplaceid_text" value="<?php echo $hoteldata->hotel_booking_page;?>" class="w-50" style="border:1px solid blue;border-radius:6px;height:37px;margin-top:-4px;padding-left:6px">
+    				</div>
+
+    				
+
+    				<div class="form-group d-flex justify-content-end">
+    					<button type="submit" name="submit" class="btn btn-info" value="Submit">Edit</button> 
+    				</div>
+ 			 
+		</form> 
+
+
     </div>
 
 
-	
-	
-	
 
-
-    <script src="<?php echo base_url().'assets/js/vendor/bootstrap-4.1.3.min.js' ?>"></script>
-    <script src="<?php echo base_url().'assets/js/main.js'?>"></script>
 </body>
 </html>

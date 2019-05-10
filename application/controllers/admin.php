@@ -4,6 +4,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class admin extends CI_Controller {
 
 
+	public function admin_signin(){
+
+		if(isset($_POST['submit'])){
+
+			$this->load->model('adminModel/adminmodel');
+
+			if($this->adminmodel->admin_signin($_POST['email'],md5($_POST['password']))>0)
+			{
+				$this->session->set_userdata('admin','1');
+				redirect('adminpanel');
+			}
+			else{
+
+				$this->session->set_flashdata("result","Invalid username or password");
+				redirect('adminsignup');
+			}
+		}
+	}
 	public function adminSignUp(){
 
 		
@@ -296,6 +314,15 @@ class admin extends CI_Controller {
 
 			redirect('deploy');
 		}
+	}
+
+
+	public function addhotel(){
+
+
+		//$this->load->model('adminModel/hotelmodel');
+
+		$this->load->view('adminviews/hotelview');
 	}
 	
 }

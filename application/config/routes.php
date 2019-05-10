@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'welcome';
+$route['welcome_page'] = 'welcome/welcome_page';
 $route['home'] = 'welcome/home';
 $route['admin'] = 'admin/addplace';
 $route['touristplace'] = 'welcome/touristplace';
@@ -68,5 +69,23 @@ $route['newdeploy']='admin/newdeploy';
 $route['add_deploy']='admin/add_deploy';
 $route['admin/edit_deploy/add_deploy']='admin/add_deploy';
 $route['security_service']='user/add_security_service';
+$route['search_places']='user/search_places';
+$route['manage_officers']='Manage_Officers_CI/manage_officers';
+$route['add_officer']='Manage_Officers_CI/add_officer';
+$route['search_officers']='user/search_officers';
+$route['touristArea']='user/touristArea';
+$route['user_login']='user/user_login';
+$route['user_logout']='user/user_logout';
+$route['admin_signin']='admin/admin_signin';
+$route['hotelmanage']='hotel_admin/addhotel';
+$route['insert_hotel']='hotel_admin/insert_hotel';
+//$route['edit_hotel']='hotel_admin/edit_hotel';
+$route['edit_hotel/(:num)']='hotel_admin/edit_hotel';
+$route['delete/(:num)']='hotel_admin/delete';
+$route['user_hotel_controller']='user_hotel_controller/index';
+
+
+
+
 
 

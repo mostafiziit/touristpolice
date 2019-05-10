@@ -1,6 +1,15 @@
 <?php
 class adminmodel extends CI_Model{
 
+	public function admin_signin($email,$password){
+
+		$this->db->where('email',$email);
+		$this->db->where('password',$password);
+		$count=count($this->db->get('admin')->result());
+		
+		return $count;
+	}
+
 	 public function signup($name,$email,$password,$phone,$type){
 
 	 	$data['name']=$name;
@@ -83,6 +92,29 @@ class adminmodel extends CI_Model{
 		$this->db->where("id", $id);
 
 		return $this->db->delete('deploy_table');
+	}
+
+	public function add_officer($name,$rank,$location,$email,$number){
+
+		$data['name']=$name;
+		$data['rank']=$rank;
+		$data['location']=$location;
+		$data['email']=$email;
+		$data['phone']=$number;
+
+		return $this->db->insert('officer_table',$data);	
+	}
+
+	public function getAllOfficersData(){
+
+
+		return $this->db->get('officer_table')->result();
+	}
+	public function delete_officer($id){
+
+		$this->db->where('id',$id);
+
+		return $this->db->delete('officer_table');
 	}
 
 }
