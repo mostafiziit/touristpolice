@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-xl-3 offset-xl-1 col-lg-3">
                             <div class="single-widge-home">
-                                <h3 class="mb-4">facebook feed</h3>
+                                <h3 class="mb-4">facebook/instagram feed</h3>
                                 <div class="feed">
                                     <img src="assets/images/feed1.jpg" alt="feed">
                                     <img src="assets/images/feed2.jpg" alt="feed">
